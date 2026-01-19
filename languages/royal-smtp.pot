@@ -1,0 +1,706 @@
+# Copyright (C) 2024 Royal Technologies
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Royal SMTP 2.0.0\n"
+"Report-Msgid-Bugs-To: https://royaltechbd.com/\n"
+"POT-Creation-Date: 2024-01-19 12:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: includes/class-royal-smtp-admin.php
+msgid "Royal SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "General"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Email Logs"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Queue"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Debug"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Tools"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "About"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Success!"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Error!"
+msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Settings saved successfully."
+msgstr ""
+
+#: views/general-settings.php
+msgid "Mailer Type"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Select Mailer"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Default PHP Mail"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Select SMTP for reliable email delivery."
+msgstr ""
+
+#: views/general-settings.php
+msgid "From Settings"
+msgstr ""
+
+#: views/general-settings.php
+msgid "From Email"
+msgstr ""
+
+#: views/general-settings.php
+msgid "The email address used as the sender."
+msgstr ""
+
+#: views/general-settings.php
+msgid "From Name"
+msgstr ""
+
+#: views/general-settings.php
+msgid "The name used as the sender."
+msgstr ""
+
+#: views/general-settings.php
+msgid "Features"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Enable Email Logging"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Log all sent emails for debugging."
+msgstr ""
+
+#: views/general-settings.php
+msgid "Enable Debug Mode"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Capture detailed SMTP debug information."
+msgstr ""
+
+#: views/general-settings.php
+msgid "Enable Email Queue"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Queue emails for background processing."
+msgstr ""
+
+#: views/general-settings.php
+msgid "Failure Notifications"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Send notification on email failure"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Notification Email"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Email to receive failure notifications."
+msgstr ""
+
+#: views/general-settings.php
+msgid "Send Test Email"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Enter email address"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Send Test"
+msgstr ""
+
+#: views/general-settings.php
+msgid "Save Settings"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Email Provider"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "SMTP Server"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "SMTP Host"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Encryption"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "None"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "SSL"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "TLS"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "SMTP Port"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "TLS: 587, SSL: 465, None: 25"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Authentication"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Enable Authentication"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Username"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Password"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Password is encrypted before storage."
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Connection Test"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Test SMTP connection without sending an email."
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Test Connection"
+msgstr ""
+
+#: views/smtp-settings.php
+msgid "Save SMTP Settings"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Total Emails"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Sent"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Failed"
+msgstr ""
+
+#: views/email-logs.php
+msgid "All Status"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Refresh"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Clear All Logs"
+msgstr ""
+
+#: views/email-logs.php
+msgid "ID"
+msgstr ""
+
+#: views/email-logs.php
+msgid "To"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Subject"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Status"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Date"
+msgstr ""
+
+#: views/email-logs.php
+msgid "Actions"
+msgstr ""
+
+#: views/email-logs.php
+msgid "No email logs found."
+msgstr ""
+
+#: views/email-logs.php
+msgid "Enable email logging in General settings to start tracking emails."
+msgstr ""
+
+#: views/queue-management.php
+msgid "Email queue is disabled. Enable it in General settings to use this feature."
+msgstr ""
+
+#: views/queue-management.php
+msgid "Pending"
+msgstr ""
+
+#: views/queue-management.php
+msgid "Processing"
+msgstr ""
+
+#: views/queue-management.php
+msgid "Attempts"
+msgstr ""
+
+#: views/queue-management.php
+msgid "Created"
+msgstr ""
+
+#: views/queue-management.php
+msgid "Clear Sent"
+msgstr ""
+
+#: views/queue-management.php
+msgid "Clear All"
+msgstr ""
+
+#: views/queue-management.php
+msgid "No emails in queue."
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Debug mode is disabled. Enable it in General settings to capture SMTP debug information."
+msgstr ""
+
+#: views/debug-logs.php
+msgid "SMTP Debug Log"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Clear Log"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "No debug information available."
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Send a test email with debug mode enabled to see SMTP communication details."
+msgstr ""
+
+#: views/debug-logs.php
+msgid "System Information"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "PHP Version"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "WordPress Version"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Plugin Version"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "OpenSSL"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Available"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Not Available"
+msgstr ""
+
+#: views/debug-logs.php
+msgid "Server"
+msgstr ""
+
+#: views/tools.php
+msgid "Export Settings"
+msgstr ""
+
+#: views/tools.php
+msgid "Export your Royal SMTP settings to a JSON file. This file can be imported into another site."
+msgstr ""
+
+#: views/tools.php
+msgid "Sensitive data like passwords are included in encrypted form."
+msgstr ""
+
+#: views/tools.php
+msgid "Import Settings"
+msgstr ""
+
+#: views/tools.php
+msgid "Import Royal SMTP settings from a previously exported JSON file."
+msgstr ""
+
+#: views/tools.php
+msgid "This will overwrite your current settings!"
+msgstr ""
+
+#: views/tools.php
+msgid "Reset Settings"
+msgstr ""
+
+#: views/tools.php
+msgid "Reset all settings to their default values."
+msgstr ""
+
+#: views/tools.php
+msgid "This action cannot be undone!"
+msgstr ""
+
+#: views/tools.php
+msgid "Reset to Defaults"
+msgstr ""
+
+#: views/tools.php
+msgid "Database"
+msgstr ""
+
+#: views/tools.php
+msgid "Manage database tables used by the plugin."
+msgstr ""
+
+#: views/tools.php
+msgid "Clean Old (30 days)"
+msgstr ""
+
+#: views/tools.php
+msgid "%d records"
+msgstr ""
+
+#: views/about.php
+msgid "About This Plugin"
+msgstr ""
+
+#: views/about.php
+msgid "Royal SMTP is a powerful WordPress SMTP mailer plugin that helps you send emails reliably using your preferred email provider. With features like email logging, debug mode, queue system, and beautiful SweetAlert2 notifications, Royal SMTP ensures your emails are delivered successfully."
+msgstr ""
+
+#: views/about.php
+msgid "Key Features"
+msgstr ""
+
+#: views/about.php
+msgid "Multiple SMTP Providers"
+msgstr ""
+
+#: views/about.php
+msgid "Password Encryption"
+msgstr ""
+
+#: views/about.php
+msgid "Email Logging"
+msgstr ""
+
+#: views/about.php
+msgid "Email Queue System"
+msgstr ""
+
+#: views/about.php
+msgid "Debug Mode"
+msgstr ""
+
+#: views/about.php
+msgid "Connection Testing"
+msgstr ""
+
+#: views/about.php
+msgid "Import/Export Settings"
+msgstr ""
+
+#: views/about.php
+msgid "Failure Notifications"
+msgstr ""
+
+#: views/about.php
+msgid "Multi-language Support"
+msgstr ""
+
+#: views/about.php
+msgid "SweetAlert2 Popups"
+msgstr ""
+
+#: views/about.php
+msgid "Supported Providers"
+msgstr ""
+
+#: views/about.php
+msgid "Developer"
+msgstr ""
+
+#: views/about.php
+msgid "Professional Web Development & Design Solutions"
+msgstr ""
+
+#: views/about.php
+msgid "Website"
+msgstr ""
+
+#: views/about.php
+msgid "Email"
+msgstr ""
+
+#: views/about.php
+msgid "Mobile"
+msgstr ""
+
+#: views/about.php
+msgid "Address"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Other SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use custom SMTP server settings"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Gmail / Google Workspace"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use Gmail or Google Workspace SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Requires App Password (2FA enabled) or Less Secure Apps access"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Outlook / Microsoft 365"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use Outlook or Microsoft 365 SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Zoho Mail"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use Zoho Mail SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Yahoo Mail"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use Yahoo Mail SMTP"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Requires App Password"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Mailgun"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Transactional email service"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "SendGrid"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Cloud email delivery service"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use \"apikey\" as username and your API key as password"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Brevo (Sendinblue)"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Marketing and transactional email"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Amazon SES"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Amazon Simple Email Service"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Replace region in hostname (e.g., us-east-1, eu-west-1)"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Postmark"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Transactional email for web apps"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "SparkPost"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Email delivery service"
+msgstr ""
+
+#: includes/class-royal-smtp-providers.php
+msgid "Use \"SMTP_Injection\" as username"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Permission denied"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Security check failed"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Please enter a valid email address"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Test email sent successfully to %s"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Failed to send test email. Please check your SMTP settings."
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Log deleted"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "All logs cleared"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Email queued for retry"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Queue item deleted"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Queue cleared"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "No import data provided"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Invalid JSON data"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Invalid import file"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "No settings found in import file"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Settings imported successfully"
+msgstr ""
+
+#: includes/class-royal-smtp-ajax.php
+msgid "Debug log cleared"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "SMTP Host is not configured"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "Could not connect to %1$s:%2$d - %3$s"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "Invalid server response"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "STARTTLS failed"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "Successfully connected to %1$s:%2$d"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "[%s] Email Delivery Failed"
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "An email failed to send."
+msgstr ""
+
+#: includes/class-royal-smtp-mailer.php
+msgid "Unknown"
+msgstr ""

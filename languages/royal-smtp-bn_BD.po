@@ -1,0 +1,514 @@
+# Royal SMTP বাংলা অনুবাদ
+# Copyright (C) 2024 Royal Technologies
+# This file is distributed under the GPL2.
+msgid ""
+msgstr ""
+"Project-Id-Version: Royal SMTP 2.0.0\n"
+"Report-Msgid-Bugs-To: https://royaltechbd.com/\n"
+"POT-Creation-Date: 2024-01-19 12:00+0000\n"
+"PO-Revision-Date: 2024-01-19 12:00+0600\n"
+"Last-Translator: Royal Technologies <info@royaltechbd.com>\n"
+"Language-Team: Bengali <bn@li.org>\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Royal SMTP"
+msgstr "রয়্যাল এসএমটিপি"
+
+msgid "General"
+msgstr "সাধারণ"
+
+msgid "SMTP"
+msgstr "এসএমটিপি"
+
+msgid "Email Logs"
+msgstr "ইমেইল লগ"
+
+msgid "Queue"
+msgstr "সারি"
+
+msgid "Debug"
+msgstr "ডিবাগ"
+
+msgid "Tools"
+msgstr "টুলস"
+
+msgid "About"
+msgstr "সম্পর্কে"
+
+msgid "Success!"
+msgstr "সফল!"
+
+msgid "Error!"
+msgstr "ত্রুটি!"
+
+msgid "Settings saved successfully."
+msgstr "সেটিংস সফলভাবে সংরক্ষিত হয়েছে।"
+
+msgid "Mailer Type"
+msgstr "মেইলার টাইপ"
+
+msgid "Select Mailer"
+msgstr "মেইলার নির্বাচন করুন"
+
+msgid "Default PHP Mail"
+msgstr "ডিফল্ট পিএইচপি মেইল"
+
+msgid "Select SMTP for reliable email delivery."
+msgstr "নির্ভরযোগ্য ইমেইল ডেলিভারির জন্য SMTP নির্বাচন করুন।"
+
+msgid "From Settings"
+msgstr "প্রেরক সেটিংস"
+
+msgid "From Email"
+msgstr "প্রেরকের ইমেইল"
+
+msgid "The email address used as the sender."
+msgstr "প্রেরক হিসেবে ব্যবহৃত ইমেইল ঠিকানা।"
+
+msgid "From Name"
+msgstr "প্রেরকের নাম"
+
+msgid "The name used as the sender."
+msgstr "প্রেরক হিসেবে ব্যবহৃত নাম।"
+
+msgid "Features"
+msgstr "ফিচারসমূহ"
+
+msgid "Enable Email Logging"
+msgstr "ইমেইল লগিং সক্রিয় করুন"
+
+msgid "Log all sent emails for debugging."
+msgstr "ডিবাগিংয়ের জন্য সব পাঠানো ইমেইল লগ করুন।"
+
+msgid "Enable Debug Mode"
+msgstr "ডিবাগ মোড সক্রিয় করুন"
+
+msgid "Capture detailed SMTP debug information."
+msgstr "বিস্তারিত SMTP ডিবাগ তথ্য ক্যাপচার করুন।"
+
+msgid "Enable Email Queue"
+msgstr "ইমেইল সারি সক্রিয় করুন"
+
+msgid "Queue emails for background processing."
+msgstr "ব্যাকগ্রাউন্ড প্রসেসিংয়ের জন্য ইমেইল সারিবদ্ধ করুন।"
+
+msgid "Failure Notifications"
+msgstr "ব্যর্থতার নোটিফিকেশন"
+
+msgid "Send notification on email failure"
+msgstr "ইমেইল ব্যর্থ হলে নোটিফিকেশন পাঠান"
+
+msgid "Notification Email"
+msgstr "নোটিফিকেশন ইমেইল"
+
+msgid "Email to receive failure notifications."
+msgstr "ব্যর্থতার নোটিফিকেশন পাওয়ার ইমেইল।"
+
+msgid "Send Test Email"
+msgstr "টেস্ট ইমেইল পাঠান"
+
+msgid "Enter email address"
+msgstr "ইমেইল ঠিকানা লিখুন"
+
+msgid "Send Test"
+msgstr "টেস্ট পাঠান"
+
+msgid "Save Settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+msgid "Email Provider"
+msgstr "ইমেইল প্রোভাইডার"
+
+msgid "SMTP Server"
+msgstr "এসএমটিপি সার্ভার"
+
+msgid "SMTP Host"
+msgstr "এসএমটিপি হোস্ট"
+
+msgid "Encryption"
+msgstr "এনক্রিপশন"
+
+msgid "None"
+msgstr "কোনোটি নয়"
+
+msgid "SSL"
+msgstr "এসএসএল"
+
+msgid "TLS"
+msgstr "টিএলএস"
+
+msgid "SMTP Port"
+msgstr "এসএমটিপি পোর্ট"
+
+msgid "TLS: 587, SSL: 465, None: 25"
+msgstr "টিএলএস: ৫৮৭, এসএসএল: ৪৬৫, কোনোটি নয়: ২৫"
+
+msgid "Authentication"
+msgstr "অথেন্টিকেশন"
+
+msgid "Enable Authentication"
+msgstr "অথেন্টিকেশন সক্রিয় করুন"
+
+msgid "Username"
+msgstr "ইউজারনেম"
+
+msgid "Password"
+msgstr "পাসওয়ার্ড"
+
+msgid "Password is encrypted before storage."
+msgstr "সংরক্ষণের আগে পাসওয়ার্ড এনক্রিপ্ট করা হয়।"
+
+msgid "Connection Test"
+msgstr "কানেকশন টেস্ট"
+
+msgid "Test SMTP connection without sending an email."
+msgstr "ইমেইল না পাঠিয়ে SMTP কানেকশন টেস্ট করুন।"
+
+msgid "Test Connection"
+msgstr "কানেকশন টেস্ট করুন"
+
+msgid "Save SMTP Settings"
+msgstr "এসএমটিপি সেটিংস সংরক্ষণ করুন"
+
+msgid "Total Emails"
+msgstr "মোট ইমেইল"
+
+msgid "Sent"
+msgstr "পাঠানো"
+
+msgid "Failed"
+msgstr "ব্যর্থ"
+
+msgid "All Status"
+msgstr "সকল স্ট্যাটাস"
+
+msgid "Refresh"
+msgstr "রিফ্রেশ"
+
+msgid "Clear All Logs"
+msgstr "সব লগ মুছুন"
+
+msgid "ID"
+msgstr "আইডি"
+
+msgid "To"
+msgstr "প্রাপক"
+
+msgid "Subject"
+msgstr "বিষয়"
+
+msgid "Status"
+msgstr "স্ট্যাটাস"
+
+msgid "Date"
+msgstr "তারিখ"
+
+msgid "Actions"
+msgstr "অ্যাকশন"
+
+msgid "No email logs found."
+msgstr "কোনো ইমেইল লগ পাওয়া যায়নি।"
+
+msgid "Enable email logging in General settings to start tracking emails."
+msgstr "ইমেইল ট্র্যাক করতে সাধারণ সেটিংসে ইমেইল লগিং সক্রিয় করুন।"
+
+msgid "Email queue is disabled. Enable it in General settings to use this feature."
+msgstr "ইমেইল সারি নিষ্ক্রিয়। এই ফিচার ব্যবহার করতে সাধারণ সেটিংসে সক্রিয় করুন।"
+
+msgid "Pending"
+msgstr "অপেক্ষমান"
+
+msgid "Processing"
+msgstr "প্রক্রিয়াধীন"
+
+msgid "Attempts"
+msgstr "প্রচেষ্টা"
+
+msgid "Created"
+msgstr "তৈরি"
+
+msgid "Clear Sent"
+msgstr "পাঠানো মুছুন"
+
+msgid "Clear All"
+msgstr "সব মুছুন"
+
+msgid "No emails in queue."
+msgstr "সারিতে কোনো ইমেইল নেই।"
+
+msgid "Debug mode is disabled. Enable it in General settings to capture SMTP debug information."
+msgstr "ডিবাগ মোড নিষ্ক্রিয়। SMTP ডিবাগ তথ্য ক্যাপচার করতে সাধারণ সেটিংসে সক্রিয় করুন।"
+
+msgid "SMTP Debug Log"
+msgstr "এসএমটিপি ডিবাগ লগ"
+
+msgid "Clear Log"
+msgstr "লগ মুছুন"
+
+msgid "No debug information available."
+msgstr "কোনো ডিবাগ তথ্য উপলব্ধ নেই।"
+
+msgid "Send a test email with debug mode enabled to see SMTP communication details."
+msgstr "SMTP যোগাযোগের বিস্তারিত দেখতে ডিবাগ মোড সক্রিয় রেখে একটি টেস্ট ইমেইল পাঠান।"
+
+msgid "System Information"
+msgstr "সিস্টেম তথ্য"
+
+msgid "PHP Version"
+msgstr "পিএইচপি ভার্সন"
+
+msgid "WordPress Version"
+msgstr "ওয়ার্ডপ্রেস ভার্সন"
+
+msgid "Plugin Version"
+msgstr "প্লাগিন ভার্সন"
+
+msgid "OpenSSL"
+msgstr "ওপেনএসএসএল"
+
+msgid "Available"
+msgstr "উপলব্ধ"
+
+msgid "Not Available"
+msgstr "উপলব্ধ নয়"
+
+msgid "Server"
+msgstr "সার্ভার"
+
+msgid "Export Settings"
+msgstr "সেটিংস এক্সপোর্ট করুন"
+
+msgid "Export your Royal SMTP settings to a JSON file. This file can be imported into another site."
+msgstr "আপনার Royal SMTP সেটিংস JSON ফাইলে এক্সপোর্ট করুন। এই ফাইল অন্য সাইটে ইম্পোর্ট করা যাবে।"
+
+msgid "Sensitive data like passwords are included in encrypted form."
+msgstr "পাসওয়ার্ডের মতো সংবেদনশীল ডেটা এনক্রিপ্টেড ফর্মে অন্তর্ভুক্ত।"
+
+msgid "Import Settings"
+msgstr "সেটিংস ইম্পোর্ট করুন"
+
+msgid "Import Royal SMTP settings from a previously exported JSON file."
+msgstr "পূর্বে এক্সপোর্ট করা JSON ফাইল থেকে Royal SMTP সেটিংস ইম্পোর্ট করুন।"
+
+msgid "This will overwrite your current settings!"
+msgstr "এটি আপনার বর্তমান সেটিংস ওভাররাইট করবে!"
+
+msgid "Reset Settings"
+msgstr "সেটিংস রিসেট করুন"
+
+msgid "Reset all settings to their default values."
+msgstr "সব সেটিংস ডিফল্ট মানে রিসেট করুন।"
+
+msgid "This action cannot be undone!"
+msgstr "এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না!"
+
+msgid "Reset to Defaults"
+msgstr "ডিফল্টে রিসেট করুন"
+
+msgid "Database"
+msgstr "ডাটাবেস"
+
+msgid "Manage database tables used by the plugin."
+msgstr "প্লাগিন দ্বারা ব্যবহৃত ডাটাবেস টেবিল পরিচালনা করুন।"
+
+msgid "Clean Old (30 days)"
+msgstr "পুরানো পরিষ্কার করুন (৩০ দিন)"
+
+msgid "%d records"
+msgstr "%d রেকর্ড"
+
+msgid "About This Plugin"
+msgstr "এই প্লাগিন সম্পর্কে"
+
+msgid "Royal SMTP is a powerful WordPress SMTP mailer plugin that helps you send emails reliably using your preferred email provider. With features like email logging, debug mode, queue system, and beautiful SweetAlert2 notifications, Royal SMTP ensures your emails are delivered successfully."
+msgstr "Royal SMTP একটি শক্তিশালী ওয়ার্ডপ্রেস SMTP মেইলার প্লাগিন যা আপনার পছন্দের ইমেইল প্রোভাইডার ব্যবহার করে নির্ভরযোগ্যভাবে ইমেইল পাঠাতে সাহায্য করে। ইমেইল লগিং, ডিবাগ মোড, সারি সিস্টেম এবং সুন্দর SweetAlert2 নোটিফিকেশনের মতো ফিচার সহ, Royal SMTP আপনার ইমেইল সফলভাবে ডেলিভারি নিশ্চিত করে।"
+
+msgid "Key Features"
+msgstr "প্রধান ফিচারসমূহ"
+
+msgid "Multiple SMTP Providers"
+msgstr "একাধিক SMTP প্রোভাইডার"
+
+msgid "Password Encryption"
+msgstr "পাসওয়ার্ড এনক্রিপশন"
+
+msgid "Email Logging"
+msgstr "ইমেইল লগিং"
+
+msgid "Email Queue System"
+msgstr "ইমেইল সারি সিস্টেম"
+
+msgid "Debug Mode"
+msgstr "ডিবাগ মোড"
+
+msgid "Connection Testing"
+msgstr "কানেকশন টেস্টিং"
+
+msgid "Import/Export Settings"
+msgstr "সেটিংস ইম্পোর্ট/এক্সপোর্ট"
+
+msgid "Failure Notifications"
+msgstr "ব্যর্থতার নোটিফিকেশন"
+
+msgid "Multi-language Support"
+msgstr "বহু-ভাষা সাপোর্ট"
+
+msgid "SweetAlert2 Popups"
+msgstr "SweetAlert2 পপআপ"
+
+msgid "Supported Providers"
+msgstr "সমর্থিত প্রোভাইডার"
+
+msgid "Developer"
+msgstr "ডেভেলপার"
+
+msgid "Professional Web Development & Design Solutions"
+msgstr "পেশাদার ওয়েব ডেভেলপমেন্ট এবং ডিজাইন সলিউশন"
+
+msgid "Website"
+msgstr "ওয়েবসাইট"
+
+msgid "Email"
+msgstr "ইমেইল"
+
+msgid "Mobile"
+msgstr "মোবাইল"
+
+msgid "Address"
+msgstr "ঠিকানা"
+
+msgid "Other SMTP"
+msgstr "অন্যান্য SMTP"
+
+msgid "Use custom SMTP server settings"
+msgstr "কাস্টম SMTP সার্ভার সেটিংস ব্যবহার করুন"
+
+msgid "Gmail / Google Workspace"
+msgstr "জিমেইল / গুগল ওয়ার্কস্পেস"
+
+msgid "Use Gmail or Google Workspace SMTP"
+msgstr "জিমেইল বা গুগল ওয়ার্কস্পেস SMTP ব্যবহার করুন"
+
+msgid "Requires App Password (2FA enabled) or Less Secure Apps access"
+msgstr "অ্যাপ পাসওয়ার্ড (2FA সক্রিয়) অথবা Less Secure Apps অ্যাক্সেস প্রয়োজন"
+
+msgid "Outlook / Microsoft 365"
+msgstr "আউটলুক / মাইক্রোসফট ৩৬৫"
+
+msgid "Use Outlook or Microsoft 365 SMTP"
+msgstr "আউটলুক বা মাইক্রোসফট ৩৬৫ SMTP ব্যবহার করুন"
+
+msgid "Zoho Mail"
+msgstr "জোহো মেইল"
+
+msgid "Use Zoho Mail SMTP"
+msgstr "জোহো মেইল SMTP ব্যবহার করুন"
+
+msgid "Yahoo Mail"
+msgstr "ইয়াহু মেইল"
+
+msgid "Use Yahoo Mail SMTP"
+msgstr "ইয়াহু মেইল SMTP ব্যবহার করুন"
+
+msgid "Requires App Password"
+msgstr "অ্যাপ পাসওয়ার্ড প্রয়োজন"
+
+msgid "Mailgun"
+msgstr "মেইলগান"
+
+msgid "Transactional email service"
+msgstr "ট্রানজেকশনাল ইমেইল সার্ভিস"
+
+msgid "SendGrid"
+msgstr "সেন্ডগ্রিড"
+
+msgid "Cloud email delivery service"
+msgstr "ক্লাউড ইমেইল ডেলিভারি সার্ভিস"
+
+msgid "Use \"apikey\" as username and your API key as password"
+msgstr "ইউজারনেম হিসেবে \"apikey\" এবং পাসওয়ার্ড হিসেবে আপনার API কী ব্যবহার করুন"
+
+msgid "Brevo (Sendinblue)"
+msgstr "ব্রেভো (সেন্ডইনব্লু)"
+
+msgid "Marketing and transactional email"
+msgstr "মার্কেটিং এবং ট্রানজেকশনাল ইমেইল"
+
+msgid "Amazon SES"
+msgstr "অ্যামাজন এসইএস"
+
+msgid "Amazon Simple Email Service"
+msgstr "অ্যামাজন সিম্পল ইমেইল সার্ভিস"
+
+msgid "Replace region in hostname (e.g., us-east-1, eu-west-1)"
+msgstr "হোস্টনেমে রিজিয়ন প্রতিস্থাপন করুন (যেমন, us-east-1, eu-west-1)"
+
+msgid "Postmark"
+msgstr "পোস্টমার্ক"
+
+msgid "Transactional email for web apps"
+msgstr "ওয়েব অ্যাপের জন্য ট্রানজেকশনাল ইমেইল"
+
+msgid "SparkPost"
+msgstr "স্পার্কপোস্ট"
+
+msgid "Email delivery service"
+msgstr "ইমেইল ডেলিভারি সার্ভিস"
+
+msgid "Use \"SMTP_Injection\" as username"
+msgstr "ইউজারনেম হিসেবে \"SMTP_Injection\" ব্যবহার করুন"
+
+msgid "Permission denied"
+msgstr "অনুমতি নেই"
+
+msgid "Security check failed"
+msgstr "নিরাপত্তা যাচাই ব্যর্থ"
+
+msgid "Please enter a valid email address"
+msgstr "একটি বৈধ ইমেইল ঠিকানা লিখুন"
+
+msgid "Test email sent successfully to %s"
+msgstr "%s এ সফলভাবে টেস্ট ইমেইল পাঠানো হয়েছে"
+
+msgid "Failed to send test email. Please check your SMTP settings."
+msgstr "টেস্ট ইমেইল পাঠাতে ব্যর্থ। আপনার SMTP সেটিংস পরীক্ষা করুন।"
+
+msgid "Log deleted"
+msgstr "লগ মুছে ফেলা হয়েছে"
+
+msgid "All logs cleared"
+msgstr "সব লগ মুছে ফেলা হয়েছে"
+
+msgid "Email queued for retry"
+msgstr "পুনরায় চেষ্টার জন্য ইমেইল সারিবদ্ধ করা হয়েছে"
+
+msgid "Queue item deleted"
+msgstr "সারি আইটেম মুছে ফেলা হয়েছে"
+
+msgid "Queue cleared"
+msgstr "সারি পরিষ্কার করা হয়েছে"
+
+msgid "Settings imported successfully"
+msgstr "সেটিংস সফলভাবে ইম্পোর্ট করা হয়েছে"
+
+msgid "Debug log cleared"
+msgstr "ডিবাগ লগ পরিষ্কার করা হয়েছে"
+
+msgid "SMTP Host is not configured"
+msgstr "SMTP হোস্ট কনফিগার করা হয়নি"
+
+msgid "Successfully connected to %1$s:%2$d"
+msgstr "%1$s:%2$d এ সফলভাবে সংযুক্ত হয়েছে"
+
+msgid "[%s] Email Delivery Failed"
+msgstr "[%s] ইমেইল ডেলিভারি ব্যর্থ"
+
+msgid "Settings"
+msgstr "সেটিংস"
+
+msgid "Great!"
+msgstr "চমৎকার!"
