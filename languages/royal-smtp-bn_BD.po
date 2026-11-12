@@ -512,3 +512,6 @@ msgstr "সেটিংস"
 
 msgid "Great!"
 msgstr "চমৎকার!"
+
+msgid "Loading..."
+msgstr "লোড হচ্ছে..."

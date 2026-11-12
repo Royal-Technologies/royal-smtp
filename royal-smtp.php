@@ -3,7 +3,7 @@
  * Plugin Name: Royal SMTP
  * Plugin URI:  https://royaltechbd.com/royal-smtp
  * Description: A powerful WordPress SMTP mailer plugin with email logging, queue system, multiple providers, and SweetAlert2 notifications.
- * Version:     26.01.19
+ * Version:     26.01.20
  * Author:      Royal Technologies
  * Author URI:  https://royaltechbd.com
  * License:     GPL2
@@ -26,7 +26,7 @@ if ( ! defined( 'ROYAL_SMTP_VERSION' ) ) {
     if ( ! empty( $plugin_data['version'] ) ) {
         define( 'ROYAL_SMTP_VERSION', $plugin_data['version'] );
     } else {
-        define( 'ROYAL_SMTP_VERSION', '26.01.19' );
+        define( 'ROYAL_SMTP_VERSION', '26.01.20' );
     }
 }
 define( 'ROYAL_SMTP_FILE', __FILE__ );
@@ -41,6 +41,13 @@ function royal_smtp_init() {
     // Load the main loader class
     require_once ROYAL_SMTP_PATH . 'includes/class-royal-smtp-loader.php';
     Royal_SMTP_Loader::get_instance();
+
+    // Standard Royal Technologies Plugin Updater (Auto-Updates)
+    if ( is_admin() ) {
+        require_once ROYAL_SMTP_PATH . 'includes/updater.php';
+        $update_url = 'https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/royal-smtp.json';
+        new Royal_SMTP_Updater( ROYAL_SMTP_FILE, $update_url );
+    }
 }
 add_action( 'plugins_loaded', 'royal_smtp_init' );
 

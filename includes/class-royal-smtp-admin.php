@@ -103,10 +103,12 @@ class Royal_SMTP_Admin {
 
         // Localize script
         wp_localize_script( 'royal-smtp-admin', 'royalSmtp', array(
-            'ajaxUrl'   => admin_url( 'admin-ajax.php' ),
-            'nonce'     => wp_create_nonce( 'royal_smtp_nonce' ),
-            'providers' => Royal_SMTP_Providers::get_providers(),
-            'i18n'      => array(
+            'ajaxUrl'    => admin_url( 'admin-ajax.php' ),
+            'nonce'      => wp_create_nonce( 'royal_smtp_nonce' ),
+            'providers'  => Royal_SMTP_Providers::get_providers(),
+            'currentTab' => isset( $_GET['tab'] ) ? sanitize_text_field( $_GET['tab'] ) : 'general',
+            'i18n'       => array(
+                'loading'           => __( 'Loading...', 'royal-smtp' ),
                 'success'           => __( 'Success!', 'royal-smtp' ),
                 'error'             => __( 'Error!', 'royal-smtp' ),
                 'saving'            => __( 'Saving...', 'royal-smtp' ),
@@ -154,57 +156,75 @@ class Royal_SMTP_Admin {
             <h1><?php echo esc_html( get_admin_page_title() ); ?></h1>
 
             <h2 class="nav-tab-wrapper">
-                <a href="?page=royal-smtp&tab=general" class="nav-tab <?php echo $active_tab === 'general' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=general" class="nav-tab <?php echo $active_tab === 'general' ? 'nav-tab-active' : ''; ?>" data-tab="general">
                     <span class="dashicons dashicons-admin-settings"></span> <?php esc_html_e( 'General', 'royal-smtp' ); ?>
                 </a>
-                <a href="?page=royal-smtp&tab=smtp" class="nav-tab <?php echo $active_tab === 'smtp' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=smtp" class="nav-tab <?php echo $active_tab === 'smtp' ? 'nav-tab-active' : ''; ?>" data-tab="smtp">
                     <span class="dashicons dashicons-email-alt"></span> <?php esc_html_e( 'SMTP', 'royal-smtp' ); ?>
                 </a>
-                <a href="?page=royal-smtp&tab=logs" class="nav-tab <?php echo $active_tab === 'logs' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=logs" class="nav-tab <?php echo $active_tab === 'logs' ? 'nav-tab-active' : ''; ?>" data-tab="logs">
                     <span class="dashicons dashicons-list-view"></span> <?php esc_html_e( 'Email Logs', 'royal-smtp' ); ?>
                 </a>
-                <a href="?page=royal-smtp&tab=queue" class="nav-tab <?php echo $active_tab === 'queue' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=queue" class="nav-tab <?php echo $active_tab === 'queue' ? 'nav-tab-active' : ''; ?>" data-tab="queue">
                     <span class="dashicons dashicons-clock"></span> <?php esc_html_e( 'Queue', 'royal-smtp' ); ?>
                 </a>
-                <a href="?page=royal-smtp&tab=debug" class="nav-tab <?php echo $active_tab === 'debug' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=debug" class="nav-tab <?php echo $active_tab === 'debug' ? 'nav-tab-active' : ''; ?>" data-tab="debug">
                     <span class="dashicons dashicons-admin-tools"></span> <?php esc_html_e( 'Debug', 'royal-smtp' ); ?>
                 </a>
-                <a href="?page=royal-smtp&tab=tools" class="nav-tab <?php echo $active_tab === 'tools' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=tools" class="nav-tab <?php echo $active_tab === 'tools' ? 'nav-tab-active' : ''; ?>" data-tab="tools">
                     <span class="dashicons dashicons-admin-generic"></span> <?php esc_html_e( 'Tools', 'royal-smtp' ); ?>
                 </a>
-                <a href="?page=royal-smtp&tab=about" class="nav-tab <?php echo $active_tab === 'about' ? 'nav-tab-active' : ''; ?>">
+                <a href="?page=royal-smtp&tab=about" class="nav-tab <?php echo $active_tab === 'about' ? 'nav-tab-active' : ''; ?>" data-tab="about">
                     <span class="dashicons dashicons-info"></span> <?php esc_html_e( 'About', 'royal-smtp' ); ?>
                 </a>
             </h2>
 
             <div class="royal-smtp-tab-content">
-                <?php
-                switch ( $active_tab ) {
-                    case 'smtp':
-                        include ROYAL_SMTP_PATH . 'views/smtp-settings.php';
-                        break;
-                    case 'logs':
-                        include ROYAL_SMTP_PATH . 'views/email-logs.php';
-                        break;
-                    case 'queue':
-                        include ROYAL_SMTP_PATH . 'views/queue-management.php';
-                        break;
-                    case 'debug':
-                        include ROYAL_SMTP_PATH . 'views/debug-logs.php';
-                        break;
-                    case 'tools':
-                        include ROYAL_SMTP_PATH . 'views/tools.php';
-                        break;
-                    case 'about':
-                        include ROYAL_SMTP_PATH . 'views/about.php';
-                        break;
-                    default:
-                        include ROYAL_SMTP_PATH . 'views/general-settings.php';
-                        break;
-                }
-                ?>
+                <?php echo self::get_tab_content( $active_tab ); ?>
             </div>
         </div>
         <?php
+    }
+
+    /**
+     * Get rendered tab content
+     *
+     * @param string $tab Tab key.
+     * @return string
+     */
+    public static function get_tab_content( $tab = 'general' ) {
+        $allowed = array( 'general', 'smtp', 'logs', 'queue', 'debug', 'tools', 'about' );
+        if ( ! in_array( $tab, $allowed, true ) ) {
+            $tab = 'general';
+        }
+
+        ob_start();
+        echo '<div class="royal-smtp-tab-pane royal-fade-in" data-current-tab="' . esc_attr( $tab ) . '">';
+        switch ( $tab ) {
+            case 'smtp':
+                include ROYAL_SMTP_PATH . 'views/smtp-settings.php';
+                break;
+            case 'logs':
+                include ROYAL_SMTP_PATH . 'views/email-logs.php';
+                break;
+            case 'queue':
+                include ROYAL_SMTP_PATH . 'views/queue-management.php';
+                break;
+            case 'debug':
+                include ROYAL_SMTP_PATH . 'views/debug-logs.php';
+                break;
+            case 'tools':
+                include ROYAL_SMTP_PATH . 'views/tools.php';
+                break;
+            case 'about':
+                include ROYAL_SMTP_PATH . 'views/about.php';
+                break;
+            case 'general':
+            default:
+                include ROYAL_SMTP_PATH . 'views/general-settings.php';
+                break;
+        }
+        echo '</div>';
+        return ob_get_clean();
     }
 }

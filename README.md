@@ -1,142 +1,139 @@
 # Royal SMTP
 
-![Version](https://img.shields.io/badge/version-26.01.19-blue.svg)
-![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)
-![WordPress](https://img.shields.io/badge/WordPress-5.8%2B-blue.svg)
-![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)
+<p align="center">
+  <img src="assets/images/royal-smtp-772x250.png" alt="Royal SMTP Banner" width="772">
+</p>
 
-Reliable WordPress Email Delivery - A powerful SMTP mailer plugin with email logging, queue system, and multiple provider support.
-
-## 📧 Description
-
-**Royal SMTP** ensures reliable email delivery from your WordPress site by connecting to trusted SMTP servers. Say goodbye to emails landing in spam folders!
-
-### Why Choose Royal SMTP?
-
-WordPress's default `wp_mail()` function often fails to deliver emails reliably. Royal SMTP solves this by:
-- Connecting your site to professional SMTP servers
-- Providing detailed email logging
-- Supporting multiple email providers
-- Offering a beautiful, modern admin interface
-
-## 🚀 Features
-
-### Multiple SMTP Providers
-- **Gmail** (OAuth 2.0 & SMTP)
-- **Outlook / Office 365** (OAuth 2.0 & SMTP)
-- **Yahoo Mail**
-- **Amazon SES**
-- **SendGrid**
-- **Mailgun**
-- **SMTP.com**
-- **Brevo (Sendinblue)**
-- **Postmark**
-- **SparkPost**
-- **Custom SMTP Server**
-
-### Core Features
-- ✅ **One-Click Test Email** - Instantly verify your SMTP configuration
-- ✅ **Connection Test** - Test SMTP server connectivity before sending
-- ✅ **Email Logs** - Track every email with detailed logging
-- ✅ **Email Queue** - Queue emails for batch processing
-- ✅ **Secure Authentication** - TLS/SSL encryption support
-- ✅ **SweetAlert2 Notifications** - Beautiful, modern alerts
-- ✅ **DataTables Integration** - Powerful email log management
-- ✅ **Multilingual Ready** - Bengali (বাংলা) included
-
-### Admin Features
-- Modern, intuitive dashboard
-- Tab-based settings organization
-- Real-time AJAX operations
-- Responsive design for all devices
-- Loading states with visual feedback
-
-## 📦 Installation
-
-### From GitHub (Manual)
-1. Download the latest release from [GitHub](https://github.com/mehdiakram/royal-smtp)
-2. Upload the `royal-smtp` folder to `/wp-content/plugins/`
-3. Activate the plugin through the 'Plugins' menu in WordPress
-4. Go to **Royal SMTP** in the admin menu to configure
-
-### Using Git
-```bash
-cd wp-content/plugins/
-git clone https://github.com/mehdiakram/royal-smtp.git
-```
-
-## ⚙️ Configuration
-
-### Basic Setup
-1. Navigate to **Royal SMTP** in your WordPress admin
-2. Select your email provider (Gmail, Outlook, etc.)
-3. Enter your SMTP credentials
-4. Click "Save Settings"
-5. Send a test email to verify
-
-### Gmail Setup
-1. Select "Gmail" as provider
-2. Use your Gmail address as SMTP username
-3. Generate an "App Password" from Google Account settings
-4. Use the App Password as SMTP password
-5. SMTP Host: `smtp.gmail.com`
-6. SMTP Port: `587` (TLS) or `465` (SSL)
-
-### Custom SMTP
-1. Select "Other" as provider
-2. Enter your SMTP host (e.g., `mail.yourdomain.com`)
-3. Enter your SMTP port (commonly `587` or `465`)
-4. Choose encryption (TLS recommended)
-5. Enter your email and password
-
-## 🖥️ Screenshots
-
-The plugin features a modern, card-based interface with:
-- Clean settings tabs
-- Visual provider selection
-- Real-time test results
-- Comprehensive email logs
-
-## 📋 Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for a detailed version history.
-
-## 🔧 Requirements
-
-- **WordPress:** 5.8 or higher
-- **PHP:** 7.4 or higher
-- **MySQL:** 5.6 or higher
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 🐛 Bug Reports
-
-If you discover any bugs, please create an issue on [GitHub Issues](https://github.com/mehdiakram/royal-smtp/issues).
-
-## 📄 License
-
-This project is licensed under the GPL-2.0+ License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Royal Technologies**
-- Website: [https://royaltechbd.com](https://royaltechbd.com)
-- GitHub: [@mehdiakram](https://github.com/mehdiakram)
-
-## 🙏 Credits
-
-- [PHPMailer](https://github.com/PHPMailer/PHPMailer) - Email sending library
-- [SweetAlert2](https://sweetalert2.github.io/) - Beautiful alerts
-- [DataTables](https://datatables.net/) - Advanced table features
+<p align="center">
+  <a href="https://github.com/Royal-Technologies/royal-smtp"><img src="https://img.shields.io/badge/version-26.01.19-blue.svg" alt="Version"></a>
+  <img src="https://img.shields.io/badge/Price-100%25%20Free%20Forever-brightgreen.svg" alt="100% Free">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-GPL--2.0%2B-green.svg" alt="License"></a>
+  <img src="https://img.shields.io/badge/WordPress-5.8%2B-blue.svg" alt="WordPress">
+  <img src="https://img.shields.io/badge/PHP-7.4%2B-purple.svg" alt="PHP">
+  <img src="https://img.shields.io/badge/Auto--Updates-Supported-success.svg" alt="Auto-Updates">
+</p>
 
 ---
 
-**Made with ❤️ in Bangladesh**
+## 🌟 100% Free & Open Source — No Pro Version, No Limits!
+
+> **🎉 Royal SMTP is completely FREE forever!**  
+> Unlike other SMTP plugins, **there is NO paid "Pro" upgrade, NO paywalls, and NO feature restrictions.**  
+> Every feature — from **Email Logging**, **Email Queueing**, **SweetAlert2 Notifications**, to **Automated WordPress Updates** — is 100% free and included out-of-the-box.
+
+---
+
+## 📧 Description
+
+**Royal SMTP** solves WordPress email deliverability problems once and for all. By routing emails through reliable SMTP servers and transactional mail providers, your emails land directly in the inbox instead of the spam/junk folder.
+
+### Key Highlights:
+- **100% Free Forever:** All features, all providers, zero restrictions.
+- **Auto-Connect Presets:** One-click presets for Gmail, Zoho Mail, Zoho ZeptoMail, Outlook, SendGrid, Brevo, and more.
+- **No Third-Party Plugins Required:** Direct SMTP connection for Gmail, Zoho, and ZeptoMail without complex Google Cloud Console or Zoho OAuth configurations.
+- **Automated Updates:** Receive new features and bug fixes directly in your WordPress dashboard via GitHub Releases.
+- **Detailed Email Logs:** Inspect recipient, subject, headers, delivery status, and resend failed emails.
+- **Background Queue System:** Process batch emails smoothly using WP-Cron.
+- **SweetAlert2 Alerts & Modern UI:** Beautiful, responsive admin interface.
+
+---
+
+## 🚀 Supported Providers
+
+| Provider | Auto-Connect | Extra Plugin Needed? |
+| :--- | :---: | :---: |
+| **Gmail / Google Workspace** | ✅ 1-Click Preset | ❌ **No (App Password)** |
+| **Zoho Mail** | ✅ 1-Click Preset | ❌ **No (App Password)** |
+| **Zoho ZeptoMail** | ✅ 1-Click Preset | ❌ **No (Token Auth)** |
+| **Outlook / Microsoft 365** | ✅ 1-Click Preset | ❌ **No** |
+| **SendGrid** | ✅ 1-Click Preset | ❌ **No** |
+| **Brevo (Sendinblue)** | ✅ 1-Click Preset | ❌ **No** |
+| **Mailgun** | ✅ 1-Click Preset | ❌ **No** |
+| **Amazon SES** | ✅ 1-Click Preset | ❌ **No** |
+| **Postmark** | ✅ 1-Click Preset | ❌ **No** |
+| **Custom SMTP Server** | ✅ Custom Config | ❌ **No** |
+
+---
+
+## 🔌 Direct Setup Without Other Plugins (কোনো অন্য প্লাগইন ছাড়া কানেক্ট)
+
+### 1. Gmail / Google Workspace Setup
+You **do not need** the Google Cloud Console API or external OAuth plugins!
+1. Go to your **Google Account** &rarr; **Security**.
+2. Turn on **2-Step Verification** (if not already enabled).
+3. Visit [Google App Passwords](https://myaccount.google.com/apppasswords).
+4. Create an App name (e.g. `WordPress SMTP`) and copy the 16-character password generated.
+5. In **Royal SMTP**:
+   - Click the **Gmail** provider card.
+   - Enter your Gmail address as **Username** and **From Email**.
+   - Paste the 16-character password into **Password**.
+   - Save and send a Test Email!
+
+### 2. Zoho Mail Setup
+You **do not need** any Zoho developer app or OAuth plugin!
+1. Log in to [Zoho Accounts Security](https://accounts.zoho.com/home#security/security_pwd).
+2. Under **Application-Specific Passwords**, click **Generate New Password**.
+3. In **Royal SMTP**:
+   - Click the **Zoho Mail** provider card.
+   - Enter your full Zoho email as **Username** and **From Email**.
+   - Paste your Application-Specific Password into **Password**.
+   - *(Optional for EU/India accounts: Use `smtp.zoho.eu` or `smtp.zoho.in`)*.
+   - Save and send a Test Email!
+
+### 3. Zoho ZeptoMail Setup (Transactional Email)
+You **do not need** ZeptoMail plugins or SDKs!
+1. Log in to your [ZeptoMail Console](https://zeptomail.zoho.com).
+2. Go to **Mail Agents** &rarr; select your agent &rarr; **Setup Info** &rarr; **SMTP**.
+3. Copy your **Send Mail Token**.
+4. In **Royal SMTP**:
+   - Click the **Zoho ZeptoMail** provider card.
+   - The Username will automatically be set to `emailapikey`.
+   - Paste your **Send Mail Token** into the **Password** field.
+   - Set your verified sender address in **From Email**.
+   - Save and send a Test Email!
+
+---
+
+## 📦 Installation
+
+### From GitHub Release (Recommended)
+1. Download `royal-smtp.zip` from [GitHub Releases](https://github.com/Royal-Technologies/royal-smtp/releases).
+2. In WordPress Admin, go to **Plugins** &rarr; **Add New** &rarr; **Upload Plugin**.
+3. Choose the downloaded zip file and click **Install Now**.
+4. Activate the plugin and go to **Royal SMTP** in the admin sidebar.
+
+### Git Clone
+```bash
+cd wp-content/plugins/
+git clone https://github.com/Royal-Technologies/royal-smtp.git
+```
+
+---
+
+## 🔄 Automatic Updates
+
+Royal SMTP includes native update checking via GitHub. When a new version is released:
+- A notification will appear in your WordPress **Plugins** screen.
+- You can enable **Automatic Updates** for Royal SMTP so your site is always running the latest and most secure version.
+- You can also view release notes directly inside the WordPress "View Details" popup.
+
+---
+
+## 🛠️ Features Breakdown
+
+- **One-Click Connection Test:** Check socket connectivity to the SMTP host before sending test emails.
+- **Instant Test Email:** Send an HTML test email with live SweetAlert2 status alerts.
+- **Detailed Email Logs:** Search, filter, view full headers and body, and re-send failed emails with 1 click.
+- **Email Queue:** Prevent server timeouts when sending mass emails (WooCommerce orders, newsletters, notifications).
+- **Import / Export:** Easily migrate or backup your SMTP configurations.
+- **Multilingual Ready:** Full Bengali (`bn_BD`) translation included.
+
+---
+
+## 📄 License & Credits
+
+- **License:** GPL-2.0+ (100% Free & Open Source)
+- **Author:** [Royal Technologies](https://royaltechbd.com)
+- **Repository:** [https://github.com/Royal-Technologies/royal-smtp](https://github.com/Royal-Technologies/royal-smtp)
+
+**Made with ❤️ by Royal Technologies**

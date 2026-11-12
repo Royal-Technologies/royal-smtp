@@ -56,6 +56,71 @@ class Royal_SMTP_Ajax {
         
         // Clear debug log
         add_action( 'wp_ajax_royal_smtp_clear_debug', array( $this, 'clear_debug' ) );
+        
+        // Load tab
+        add_action( 'wp_ajax_royal_smtp_load_tab', array( $this, 'load_tab' ) );
+        
+        // Cleanup old logs
+        add_action( 'wp_ajax_royal_smtp_cleanup_logs', array( $this, 'cleanup_logs' ) );
+        
+        // Reset settings
+        add_action( 'wp_ajax_royal_smtp_reset_settings', array( $this, 'reset_settings' ) );
+    }
+
+    /**
+     * Cleanup old logs
+     */
+    public function cleanup_logs() {
+        $this->verify_request();
+        Royal_SMTP_Logger::delete_old_logs( 30 );
+        wp_send_json_success( __( 'Old logs cleaned up successfully', 'royal-smtp' ) );
+    }
+
+    /**
+     * Reset all settings to defaults
+     */
+    public function reset_settings() {
+        $this->verify_request();
+        $defaults = array(
+            'mailer'               => 'default',
+            'provider'             => 'other',
+            'from_email'           => get_option( 'admin_email' ),
+            'from_name'            => get_bloginfo( 'name' ),
+            'smtp_host'            => '',
+            'smtp_port'            => 587,
+            'smtp_encryption'      => 'tls',
+            'smtp_auth'            => 1,
+            'smtp_user'            => '',
+            'smtp_pass'            => '',
+            'email_logging'        => 0,
+            'debug_mode'           => 0,
+            'queue_enabled'        => 0,
+            'failure_notification' => 0,
+            'notification_email'   => get_option( 'admin_email' ),
+        );
+        update_option( 'royal_smtp_options', $defaults );
+        wp_send_json_success( __( 'Settings reset to default successfully', 'royal-smtp' ) );
+    }
+
+    /**
+     * Load tab content via AJAX
+     */
+    public function load_tab() {
+        $this->verify_request();
+
+        $tab = isset( $_POST['tab'] ) ? sanitize_key( $_POST['tab'] ) : 'general';
+        $allowed = array( 'general', 'smtp', 'logs', 'queue', 'debug', 'tools', 'about' );
+
+        if ( ! in_array( $tab, $allowed, true ) ) {
+            $tab = 'general';
+        }
+
+        $html = Royal_SMTP_Admin::get_tab_content( $tab );
+
+        wp_send_json_success( array(
+            'tab'  => $tab,
+            'html' => $html,
+        ) );
     }
 
     /**

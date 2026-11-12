@@ -1,0 +1,64 @@
+name: Build & Release WordPress Plugin
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Build & Publish Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Extract Plugin Version
+        id: get_version
+        run: |
+          VERSION=$(grep -i "Version:" royal-smtp.php | head -1 | awk -F': ' '{print $2}' | tr -d '\r\n ')
+          echo "Detected version: $VERSION"
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          
+          if [ -n "$GITHUB_REF_NAME" ] && [[ "$GITHUB_REF_NAME" == v* ]]; then
+            echo "tag=$GITHUB_REF_NAME" >> $GITHUB_OUTPUT
+          else
+            echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Package Plugin (WordPress Standard Structure)
+        run: |
+          mkdir -p build_dir/royal-smtp
+          
+          # Copy all plugin files except git/ci and internal build directories
+          rsync -av --exclude='.git*' \
+                    --exclude='.github*' \
+                    --exclude='build_dir' \
+                    --exclude='dist' \
+                    --exclude='package' \
+                    --exclude='*.zip' \
+                    --exclude='*.bat' \
+                    ./ build_dir/royal-smtp/
+          
+          cd build_dir
+          zip -r ../royal-smtp.zip royal-smtp/
+          cd ..
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.get_version.outputs.tag }}
+          name: Royal SMTP v${{ steps.get_version.outputs.version }}
+          files: royal-smtp.zip
+          make_latest: true
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

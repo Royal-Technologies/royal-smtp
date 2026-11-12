@@ -704,3 +704,7 @@ msgstr ""
 #: includes/class-royal-smtp-mailer.php
 msgid "Unknown"
 msgstr ""
+
+#: includes/class-royal-smtp-admin.php
+msgid "Loading..."
+msgstr ""

@@ -35,6 +35,8 @@ $providers = Royal_SMTP_Providers::get_providers();
                         </label>
                     <?php endforeach; ?>
                 </div>
+                <!-- Provider Note & Auto-Connect Instructions -->
+                <div id="royal-smtp-provider-note" class="royal-smtp-notice" style="display:none; margin-top: 15px;"></div>
             </div>
         </div>
 
@@ -161,9 +163,6 @@ $providers = Royal_SMTP_Providers::get_providers();
         </div>
 
     </div>
-
-    <!-- Provider Note -->
-    <div id="royal-smtp-provider-note" class="royal-smtp-notice" style="display:none;"></div>
 
     <!-- Save Button -->
     <div class="royal-smtp-save-area">
