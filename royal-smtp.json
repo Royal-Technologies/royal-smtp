@@ -1,17 +1,17 @@
 {
-    "version": "26.01.20",
-    "homepage": "https://github.com/Royal-Technologies/royal-smtp",
-    "download_url": "https://github.com/Royal-Technologies/royal-smtp/releases/latest/download/royal-smtp.zip",
-    "banners": {
-        "low": "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/royal-smtp-772x250.png",
-        "high": "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/royal-smtp-1544x500.png"
-    },
-    "icons": {
-        "1x": "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/icon-128x128.png",
-        "2x": "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/icon-256x256.png"
-    },
-    "sections": {
-        "description": "Royal SMTP is a 100% FREE, powerful WordPress SMTP mailer plugin with email logging, queue system, SweetAlert2 alerts, auto-updates, and instant presets for Gmail, Zoho Mail, Zoho ZeptoMail, Outlook, SendGrid, and custom SMTP servers without extra plugins.",
-        "changelog": "<ul>\n\t<li><strong>26.01.19:</strong> GitHub Releases & WordPress Auto-Update integration. Added Zoho ZeptoMail auto-connect preset with prefilled credentials. Enhanced direct connection support for Gmail and Zoho Mail without 3rd party plugins. 100% Free & Open Source branding.</li>\n</ul>"
-    }
+    "version":  "26.01.20",
+    "homepage":  "https://github.com/Royal-Technologies/royal-smtp",
+    "download_url":  "https://github.com/Royal-Technologies/royal-smtp/releases/latest/download/royal-smtp.zip",
+    "banners":  {
+                    "low":  "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/royal-smtp-772x250.png",
+                    "high":  "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/royal-smtp-1544x500.png"
+                },
+    "icons":  {
+                  "1x":  "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/icon-128x128.png",
+                  "2x":  "https://raw.githubusercontent.com/Royal-Technologies/royal-smtp/main/assets/images/icon-256x256.png"
+              },
+    "sections":  {
+                     "description":  "Royal SMTP is a 100% FREE, powerful WordPress SMTP mailer plugin with email logging, queue system, SweetAlert2 alerts, auto-updates, and instant presets for Gmail, Zoho Mail, Zoho ZeptoMail, Outlook, SendGrid, and custom SMTP servers without extra plugins.",
+                     "changelog":  "\u003cul\u003e\n\t\u003cli\u003e\u003cstrong\u003e26.01.19:\u003c/strong\u003e GitHub Releases \u0026 WordPress Auto-Update integration. Added Zoho ZeptoMail auto-connect preset with prefilled credentials. Enhanced direct connection support for Gmail and Zoho Mail without 3rd party plugins. 100% Free \u0026 Open Source branding.\u003c/li\u003e\n\u003c/ul\u003e"
+                 }
 }
